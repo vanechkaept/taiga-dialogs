@@ -1,0 +1,44 @@
+<header class="header">
+	<h1>
+		<img
+      src="https://raw.githubusercontent.com/TinkoffCreditSystems/taiga-ui/1c73e97155678e2616726866484db8ccad4cdb4f/projects/demo/src/assets/images/taiga.svg"
+      alt="taiga ui logo"
+      width="24"
+    />
+    Taiga UI
+  </h1>
+
+		<iframe
+			src="https://ghbtns.com/github-btn.html?user=TinkoffCreditSystems&repo=taiga-ui&type=star&count=true&size=large"
+			frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+</header>
+
+<tui-root>
+	<tui-input [(ngModel)]="test">
+		Dialog text
+	</tui-input>
+	<p>
+		<button tuiButton (click)="showText()">
+			Show text
+		</button>
+	</p>
+	<p>
+		<button tuiButton (click)="showFunction()">
+			Show function
+		</button>
+	</p>
+	<p>
+		<button tuiButton (click)="showTemplate(template)">
+			Show template
+		</button>
+	</p>
+	<p>
+		<button tuiButton (click)="showComponent()">
+			Show component
+		</button>
+	</p>
+	<ng-template #template>
+		<strong>You've entered:</strong>
+		{{test}}
+	</ng-template>
+</tui-root>
